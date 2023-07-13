@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    /*Primary*/
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    /*Gradients*/
+    --lightSlateBlue: hsl(252, 100%, 67%);
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue: hsla(241, 72%, 46%, 0);
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 30%, 27%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+html {
+    height: 100vh;
+    width: 100vw;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 667px;
+    width: 375px;
+}
+
+#top {
+    width: 375px;
+    height: 45%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#result {
+    color: lightgray;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+#bubble {
+    width: 150px;
+    height: 150px;
+    background-image: radial-gradient(circle, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    pos
+}
+
+#score {
+    color: var(--white);
+    font-size: 65px;
+}
+
+#total {
+    color: lightgray;
+}
+
+span {
+    color: var(--white);
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#discription {
+    color: rgb(176, 176, 176);
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+    width: 76%;
+    margin-top: 15px;
+}
+
+#bottom {
+    width: 375px;
+    height: 55%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#summary {
+    display: flex;
+    align-items: flex-start;
+}
+
+#reactioncontainer {
+    width: 75%;
+    display: flex;
+    background-color: rgba(255, 92, 92, 0.1);
+    border-radius: 10px;
+}
+
+#red {
+    color: var(--lightRed);
+}
+
+#memorycontainer {
+    width: 75%;
+    display: flex;
+    background-color: var(--orangeyYellow);
+    opacity: .1;
+    border-radius: 10px;
+}
+
+#yellow {
+    color: var(--orangeyYellow);
+}
+
+#verbalcontainer {
+    width: 75%;
+    display: flex;
+    background-color: var(--greenTeal);
+    opacity: .1;
+    border-radius: 10px;
+}
+
+#green {
+    color: var(--greenTeal);
+}
+
+#visualcontainer {
+    width: 75%;
+    display: flex;
+    background-color: var(--cobaltBlue);
+    opacity: .1;
+    border-radius: 10px;
+}
+
+#blue {
+    color: var(--cobaltBlue);
+}
+
+button {
+    color: var(--white);
+    background-color: var(--darkGrayBlue);
+    width: 75%;
+    height: 12%;
+    border-radius: 29px;
+}
